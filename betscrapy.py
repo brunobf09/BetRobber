@@ -46,6 +46,7 @@ def scrapy(league):
                'AwayTeam': away,
                'Odd_Betfair': odd}
 
+    print(betfair)
     betfair_df = pd.DataFrame(betfair)
 
     return betfair_df
