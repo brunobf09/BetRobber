@@ -44,7 +44,7 @@ def scrapy(league):
     betfair = {'Date': date,
                'HomeTeam': home,
                'AwayTeam': away,
-               'Odd_Betfair': odd}
+               'Odd_Betfair': odd[:len(date)+1]}
 
     print(betfair)
     betfair_df = pd.DataFrame(betfair)
